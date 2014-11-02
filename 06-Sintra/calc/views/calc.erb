@@ -1,0 +1,12 @@
+<form action="/calc"> 			<!-- Now we can actually enter details on this without editing the URL -->
+	<input name = 'first' placeholder="x">
+	<input name = 'operator' placeholder="operator">
+	<input name = 'second' placeholder="y">
+	<button>Calculate!</button>
+</form>
+
+<% if @result %>
+	<p> x = <%= params[:first] %> </p>
+	<p> y = <%= params[:second] %> </p>
+	<p> <marquee> Calculation: <b><%= @result %> </b> </marquee> </p
+<% end %>

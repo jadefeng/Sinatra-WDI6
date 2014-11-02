@@ -1,0 +1,39 @@
+body {
+	background-color: pink;
+	color: black;
+	font-family: Helvetica;
+}
+
+article h2 { /*this h2 has a line by itself*/
+	font-style: italic;
+	color: white;
+	text-decoration: underline;
+	background-color: orange;
+	display: inline-block; /*This will stop h2 from having a line by itself*/
+	padding: 20px;
+	border-radius: 5px;
+} 
+
+h2.subheading {
+	color: black;
+	text-align: center;
+	display: block;
+}
+
+#logo {
+	font-size: 100px;
+	text-align: center;
+	color: orange;
+	text-shadow: 0px 0px 5px black;
+}
+
+.container {
+	max-width: 960px;
+	border: 1px dashed black;
+	margin: auto; /* center it automatically even if the page changes */
+}
+
+* { /*WILDCAAAARD*/
+	border: 1px solid green; /*This border will help us understand the BORDERS of the CONTENT*/	
+	margin: 20px;
+}

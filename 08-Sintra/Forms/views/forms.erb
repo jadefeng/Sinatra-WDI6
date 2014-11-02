@@ -1,0 +1,97 @@
+<div class="container">
+	<h1> Hipster Lorem </h1>
+
+	<p> Mustache shabby chic Austin kitsch, before they sold out keytar vegan cray +1 8-bit mixtape actually synth church-key you probably haven't heard of them. Brunch locavore butcher swag keytar master cleanse kogi disrupt beard. Odd Future fanny pack sartorial, Truffaut swag next level Godard hashtag sriracha kogi cardigan Intelligentsia cred flexitarian. Quinoa jean shorts biodiesel paleo tote bag flannel, 3 wolf moon Truffaut mlkshk pug craft beer retro locavore Helvetica Intelligentsia. Fap food truck mixtape, Schlitz shabby chic Tumblr ugh. IPhone distillery butcher skateboard photo booth direct trade. Fanny pack Tumblr 3 wolf moon banjo, ennui keffiyeh fixie Portland semiotics Neutra forage typewriter gastropub. </p>
+
+</div>
+
+<section class="forms-example">
+	<form action="/process" method="get"> <!-- Sends the form to a new page that will process the inputs -->
+
+		<div class="input-group">
+			<label for="site-search">Search: </label>
+			<input type="text" name="site-search" id="site-search" placeholder="Yummy hotdogs">
+		</div>
+
+<!-- ### PASSWORD -->
+		<div class="input-group">
+			<label for="secret_password">Secret password:</label>
+			<input type="password" id="secret_password" name = "secret_squirrel" required> <!-- Adding required means that the form cannot be submitted until you fill this in -->
+		</div>
+
+		<div class="input-group">
+			<label for="hotdog_style"> What is your favourite style of hotdog? </label>
+			<input type="text" name="hotdogs" id="hotdog_style" placeholder="Austrian" value="Bavarian">
+		</div>
+		<div class="input-group">
+			<label for="hotdog_count"> How many hotdogs have you had this week? </label>
+			<input type="number" name="hotdog_count" id="hotdog_count" placeholder="5" value="8005"> <!-- Putting in a value pre-fills that box! -->
+		</div>
+		<div class="input-group">
+			<label for="hotdog_date"> What was the date of your last hotdog? </label>
+			<input type="date" name="hotdog_date" id = "hotdog_date"> 
+		</div>
+
+		<div class="input-group">
+			<label for="hotdog_time"> What was the time when you ate it?</label>
+			<input type="time" name="hotdog_time" id="hotdog_time" >
+		</div>	
+
+		<div class="input-group">
+			<label></label>
+		</div>
+			<!-- <input type="submit" value="Send to the server"> </div> -->
+
+		<input type="hidden" name="whatever" value="kellogs"> 
+		<!-- This input means that people can't find it -->
+
+		<div class="input-group"> <!-- DROPDOWN OPTIONS -->
+			<label for="size_menu">Size:</label>
+			<select name="size" id="size_menu"> <!-- Params is called 'size' -->
+				<option value="xs">XS</option>
+			 	<option value="s">Small</option>
+			 	<option value="m">Medium</option>
+				<option value="l">Large</option>
+				<option value="xl">XL</option>
+				<option value="xxl">XXL</option>	
+			</select>				
+		</div>
+
+		<div class="input-group"> <!-- DROPDOWN OPTIONS DISABLED -->
+			<label for="independence_question">Should Scotland be an independent country?</label>
+			<select name="independence" id="independence_question">
+				<option disabled>Please think carefully</option> <!-- disabling this option so you can't really select it -->
+				<option value="y">Yes</option>
+				<option value="y">Aye</option>
+				<option value="y">Fookn Aye</option>
+				<option value="n" disabled>Nay</option>
+			</select>
+		</div>
+
+		<div class="input-group"> <!-- RADIO -->
+			<p> Should Tasmania be independent of mainland Australia? </p>
+
+			<label for="independence_question_yes">Yes</label>
+			<input type="radio" id="independence_question_yes" name="independence2" value="y">
+
+			<label for="independence_question_no">No</label>
+			<input type="radio" id="independence_question_no" name="independence2" value="n">
+			<!-- Radio means that you can only select one i.e. you can only tune into one radio at the same time -->
+		</div>
+
+		<div class="input-group">
+			<label for=""> Which of these genres are awful?</label>
+
+			<input type="checkbox" name="awful_genre[]" value="country" checked>Country</input> <!-- Checked pre-selects the option. The square brackets behind awful_genre[] lets it know that the output will be an ARRAY -->
+			<input type="checkbox" name="awful_genre[]" value="electronic_music" checked>Electronic Music</input>
+			<input type="checkbox" name="awful_genre[]" value="pop" checked>Pop</input>
+		</div>
+
+		<div class="input-group">
+			<label>Your life story:</label>
+			<textarea name="biography" placeholder="Your life story goes here">My life is so exciting. Let me tell you about my first memory ... blah blah blah ... Putting text here means that the "placeholder" text disappears. Also feel free to play around with the little bottom right part of the box to change the sizing or whatever.</textarea>
+		</div>
+
+			<button>Send to the server</button> 
+	</form>
+</section>

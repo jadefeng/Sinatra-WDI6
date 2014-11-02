@@ -1,0 +1,77 @@
+body {
+	background-color: yellow;
+	min-height: 1000em;
+}
+
+.container {
+	max-width: 960px;
+	border: 10px dashed black;
+	margin: auto;
+	position: relative; /*now the absolute will be relative to the .container, which is the PARENT*/
+}
+
+.box {
+	width: 10cm;
+	height: 10cm;
+	border: 1px solid black;
+}
+
+/*Positioning! */
+
+.static { /*This is the default so you don't need to apply it*/
+	position: static;
+}
+
+.relative{ /*This acts like static (the default) but changes the behaviour of its children*/
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+	left: 75%; /*comes in 75% from the left*/
+	top: 200px; /*200px from the top*/
+	background-color: rgba(255,0,100,0.5); /*Also sets the transparency*/
+}
+
+.fixed { /*Will be fixed on the page regardless of where you scroll*/
+	position:fixed;
+	left: 5%;
+	top: 150px;
+	background-color: rgb(0,255,255);
+}
+
+.overflow-hidden{
+	overflow: hidden;
+	color: blue;
+}
+
+.z-index1 {
+	z-index: 1;
+	background-color: black;
+	left: 50%;
+	top: 45%;
+}
+
+.z-index2 {
+	z-index: 2;
+	background-color: white;
+	left: 50%;
+	top: 50%;
+}
+
+.z-index3 {
+	z-index: 3;
+	background-color: red;
+	left: 50%;
+	top: 55%;
+	opacity: 0.5; /*50% seethrough*/
+}
+
+kitty {
+	overflow: hidden;
+}
+.kitty img {
+	width: 150%; /*Makes it bigger than its parent*/
+	opacity: 0.5;
+}
+
